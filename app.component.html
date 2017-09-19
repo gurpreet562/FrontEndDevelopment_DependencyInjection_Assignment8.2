@@ -1,0 +1,13 @@
+<input type="text" placeholder="Enter the employee details to add"/ id="add" #add>
+<input type="button" value="add" (click)="addEmployeeDetails(add)" />
+<div>
+  <table>
+    <tr> 
+    <th> Name </tr>  
+    </tr>
+    <tr>
+      <td *ngFor="let item of UserTestStatus" *ngIf="item.visible">
+        {{add}}
+      </td>
+      </tr>
+    </table>
